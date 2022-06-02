@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSE 121b: Week 06 | Final Project</title>
+    <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/curses.css">
+</head>
+
+<body>
+    <nav>
+        <ul id="menu">
+            <li><a id="toggleMenu">&equiv;</a></li>
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="#">Curso</a></li>
+            <li><a href="#">Asignaturas</a></li>
+            <li><a href="#">Galería</a></li>
+            <li><a href="#">Contacto</a></li>            
+        </ul>
+    </nav>
+    <header>
+        <div class="logo-box">
+            <img
+              src= "assets/logo.jpg"
+              alt="Logo Colegio San Pedro"
+            />
+          </div>
+        <h1>El Portal del 2do básico B</h1>
+    </header>
+    <main>
+        
+        <hr>
+        <section>
+            <h2>ASIGNATURAS</h2>
+            <p id="sortParagraph">
+                Ordenar por: 
+                <select id="sortBy">
+                    <option value="curseNameAscending">Alfabeticamente A-Z</option>
+                    <option value="curseNameDescending">Alfabeticamente Z-A</option>
+                </select>
+            </p>
+            <div id="curses">
+            </div>
+        </section>        
+    </main>
+    <div class="footer_class">
+        <footer>
+          <p>
+            &copy; <span id="year"></span>
+            | Iris Ayala | CSE121b |                                              
+          </p>            
+          <p class="footer_update">Ultima actualización:
+          <span id="modified"> </span>
+          </p>
+        <script src="scripts/copyrights.js"></script>   
+        </footer>
+      </div>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/task6.js"></script>
+</body>
+</html>
